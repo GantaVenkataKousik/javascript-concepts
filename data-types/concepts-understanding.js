@@ -23,9 +23,9 @@ let state;
 // symbol => unique
 
 
-which input need to be given
-what output need to be from it
-is completely defined by ECMA
+//which input need to be given
+//what output need to be from it
+//is completely defined by ECMA
 
 
 // object
