@@ -1,1 +1,37 @@
 
+// Demonstrating the differences between var, let, and const in JavaScript
+
+// var
+var x = 10;
+console.log(x); // Output: 10
+
+if (true) {
+  var x = 20;
+  console.log(x); // Output: 20
+}
+
+console.log(x); // Output: 20 (var is function-scoped)
+
+// let
+let y = 30;
+console.log(y); // Output: 30
+
+if (true) {
+  let y = 40;
+  console.log(y); // Output: 40
+}
+
+console.log(y); // Output: 30 (let is block-scoped)
+
+// const
+const z = 50;
+console.log(z); // Output: 50
+
+// z = 60; // This will throw an error (const cannot be reassigned)
+
+if (true) {
+  const z = 70;
+  console.log(z); // Output: 70
+}
+
+console.log(z); // Output: 50 (const is block-scoped)
