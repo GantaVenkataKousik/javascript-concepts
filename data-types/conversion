@@ -1,0 +1,100 @@
+let score = "hitesh"
+
+//console.log(typeof score);
+//console.log(typeof(score));
+
+let valueInNumber = Number(score)
+//console.log(typeof valueInNumber);
+//console.log(valueInNumber);
+
+
+// "33" => 33
+// "33abc" => NaN
+// "null" => 0
+// "undefined, "String" => "NaN"
+// typeof (NaN) => number
+//  true => 1; false => 0
+
+let isLoggedIn = "hitesh"
+
+let booleanIsLoggedIn = Boolean(isLoggedIn)
+//  console.log(booleanIsLoggedIn);
+
+// 1 => true; 0 => false
+// "" => false
+// "hitesh" => true
+
+let someNumber = 33
+
+let stringNumber = String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// *********************** Operations ***********************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2); o/p: 12
+// console.log(1 + "2"); o/p : 12
+// console.log("1" + 2 + 2); o/p : 122
+// console.log(1 + 2 + "2"); o/p : 32
+//why?
+
+This behavior in JavaScript is due to type coercion, where JavaScript implicitly converts data types when performing operations. Let’s break it down:
+
+console.log("1" + 2); // Output: "12"
+
+Here, the + operator is used between a string ("1") and a number (2).
+JavaScript treats + as string concatenation when at least one operand is a string.
+So, it converts the number 2 to a string "2" and concatenates it with "1", resulting in "12".
+console.log(1 + "2"); // Output: "12"
+
+Similar to the first case, you have a number (1) and a string ("2").
+JavaScript converts the number 1 to a string and concatenates it with "2", resulting in "12".
+console.log("1" + 2 + 2); // Output: "122"
+
+First, "1" + 2 happens:
+The string "1" is concatenated with the number 2, resulting in the string "12".
+Then "12" + 2 happens:
+The string "12" is concatenated with the number 2, resulting in "122".
+console.log(1 + 2 + "2"); // Output: "32"
+
+First, 1 + 2 happens:
+This is an arithmetic operation between two numbers, so the result is 3.
+Then 3 + "2" happens:
+Now, JavaScript sees a number (3) and a string ("2"), so it converts the number 3 to a string and concatenates it with "2", resulting in "32".
+In summary:
+
+When the + operator is used between a number and a string, concatenation happens.
+When it's between two numbers, arithmetic addition happens.
+
+// console.log( (3 + 4) * 5 % 3);
+
+// console.log(+true); o/p: 1
+// console.log(+""); o/p: 0
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+
+// link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
