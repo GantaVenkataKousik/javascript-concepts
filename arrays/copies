@@ -1,0 +1,50 @@
+Shallow Copy
+A shallow copy duplicates only the references of elements at the top level,
+meaning that if an element in the array is an object or another array, 
+the copy will reference the same nested objects or arrays as the original.
+Modifying nested objects in a shallow copy will affect the original array.
+
+Example of a Shallow Copy:
+
+javascript
+----
+let original = [1, { name: 'John' }];
+let shallowCopy = [...original];
+---Using spread operator
+
+shallowCopy[1].name = 'Jane'; 
+// Modifying nested object
+console.log(original[1].name); // 
+Output: 'Jane'
+In this example, changing shallowCopy[1].name 
+also changes original[1].name 
+because the inner object { name: 'John' }
+is only copied by reference.
+
+Common ways to create a shallow copy in JavaScript:
+
+Using the slice method: array.slice()
+Using the spread operator: [...array]
+Using Array.from(array)
+Deep Copy
+A deep copy duplicates all levels of the array,
+including any nested arrays or objects.
+Modifying a nested element in a deep copy won’t affect the original array.
+
+Example of a Deep Copy:
+
+javascript
+let original = [1, { name: 'John' }];
+let deepCopy = JSON.parse(JSON.stringify(original));
+
+deepCopy[1].name = 'Jane';
+console.log(original[1].name); 
+----Output: 'John'
+In this example, changing deepCopy[1].name does not affect original[1].name because all levels have been copied independently.
+
+Common ways to create a deep copy in JavaScript:
+
+Using JSON.parse(JSON.stringify(array)) 
+===(only works if the array contains serializable values)
+Using libraries like Lodash (_.cloneDeep(array))
+===Recursive functions for custom deep cloning
