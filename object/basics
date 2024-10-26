@@ -1,0 +1,67 @@
+const user= {
+  name:"Hitesh",
+  age:18,
+  location:"Jaipur"
+}
+
+console.log(user.email);
+console.log(user["email"]);
+
+the key is indeed a string 
+so whenn we are trying to access through
+indexing 
+---
+we need to pass it as string
+
+fro example we wnat to add 
+a key as full name 
+-- we add as
+  -- { "full name":"GVK"}
+
+and acess it in the same 
+way
+  --user["user name"]
+
+--Define adn add a symbol to object
+    ---
+    now define a symbol
+    and add it as a key
+    ---
+    const mySum = Symbol("key1")
+    user = {
+      [mySum]:"mykey1"
+    }
+    even you can add as like
+    {
+      "mySum":"key1"
+    }
+    --but in thsi case when you 
+      --print the type of mySum 
+      --you will get it as string 
+
+we can freeze a property of an object
+    --using Object.freeze(object_name);
+      after freezing even when you change the 
+      value it won't change
+      --and you'll get no error
+
+we can also add functions as property in object
+  ---
+  JsUser.greeting = function(){
+    console.log("Hello JS user");
+  }
+  JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+  }
+  --we  can access the properties of the objects
+    when we are defining an function in it
+    --using this
+
+
+
+
+
+
+
+
+
