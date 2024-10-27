@@ -1,0 +1,28 @@
+when calling a function 
+
+we write it as 
+<---- <function_name>() ---->
+here
+------- IIEC 
+        we define the function in a block 
+        by wrapping that ()
+
+        for ex:
+        (
+          function gvk(){
+            console.log("gvk");
+          }
+        )()
+
+        -----here when you are writing an IIFE 
+            then you need end the first one using ;
+
+        ----you can use arrown functions also in this 
+            (
+              (name) => {
+                console.log("gvk");
+              }
+            )("name");
+-------
+
+
