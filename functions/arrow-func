@@ -1,0 +1,40 @@
+these are used to 
+faciliate easy writing of a function
+
+const add = () =>{
+  ...
+  ...
+}
+
+if there are only one line 
+then 
+const add = (num1,num2)=>num1+num2;
+
+and specifically 
+----
+when you are returning an object
+  --then 
+    return that wrapping inside the braces
+    -----()
+    ex:
+    const add = (num1,num2)=>({username:"kousik"});
+
+Notee:
+
+when you use this inside a function and tried to console it
+----
+you'll get to see 
+lot of 
+------
+()
+browser related data
+but
+-----when you try to access the 
+     variables using this
+    ---you'll get undefined
+
+
+
+
+
+    
