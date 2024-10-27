@@ -1,0 +1,64 @@
+------Iterating over a map--------
+
+const map=new Map();
+map.put(1,1);
+map.put(2,1);
+map.put(3,1);
+
+using higher order loop
+-------
+  for(const key of map){
+    console.log(key);
+  }
+  --along with key
+  1.2
+  for(const [key,value] of map){
+    console.log(key);
+  }
+======
+
+but we can't do the same for object like 1.2
+For object we can do as like
+  for(const key of object){
+    console.log(key);
+  }
+  and for printing the values 
+  --you can access it through the key of the object
+    console.log(object[key]);
+===
+
+
+------
+call back functions on array
+const arr=[100,200,300,400,500]
+
+arr.forEach(function (item){
+  console.log(item);
+})
+--using arrow functions
+arr.forEach((item)=>{
+  console.log(item);
+})
+
+---we can keep the second parameter as index
+arr.forEach((item)=>{
+  console.log(item);
+})
+-------
+
+
+======
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
