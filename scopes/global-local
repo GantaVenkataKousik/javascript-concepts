@@ -1,0 +1,80 @@
+
+---------
+{
+}
+---------
+This is calle a scope
+--the opening brace is called
+  start of the scope
+--the closing brace is called
+  ending of the scope
+  --the variables defined between are 
+    deleted when scope ends
+
+here in this 
+if 
+///-----
+  if you are trying to print unreferences 
+  variables 
+  --you'll get 
+    reference error
+  for let and const
+
+----
+  but for var you can see the value  
+  ()----------()
+  Ex:
+  if(true){
+    const a =10;
+    let b=20;
+    var c=30;
+  }
+  console.log(c);
+  //outout: 30
+-----
+
+-------
+()
+
+Ex:
+  var c=300;
+  if(true){
+    const a =10;
+    let b=20;
+    var c=30;
+  }
+  console.log(c);
+  //outout: 30
+
+so in this case when you want to 
+maintain the value to be 300
+then in that case 
+you can change them to let
+
+which results in expected value
+
+()
+-------
+
+
+
+function one(){
+    const username = "hitesh"
+    function two(){
+      const website = "youtube" console.log(username);
+      console.log(website);
+    }    
+    two ()
+}
+one ()
+console.log(username);
+
+here we'll get error 
+first at 
+------
+function two 
+  --at console.log(website)
+second at 
+  --console.log(username);
+
+
