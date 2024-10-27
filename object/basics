@@ -57,11 +57,35 @@ we can also add functions as property in object
     when we are defining an function in it
     --using this
 
+.assign()
+to concate to two objects flatly
+  --placing two objects directly into 
+    othe object fetches two objects being places 
+    in another object as objects
+    ---
+    const obj3={ obj1 , obj2 };
+    const obj3=Object.assign(obj1,obj2);
+    so
+    now
+    whenever we have more objects to do the same
+    ----
+    its better 
+    if we have 
+    {} as .assign follow the structure
+    .assign(source,traget)
+    .assign({},obj1,obj2,obj3);
+    -----
+    here obj1,obj2,obj3 act as 
+    target
 
 
+important methods sometimes used:
+Object.keys()
+Object.values()
+Object.entries()
 
-
-
-
+--
+to check if it has specific value
+<object_name>.hasOwnProperty(<property_name>);
 
 
