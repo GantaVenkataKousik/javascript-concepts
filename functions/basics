@@ -1,0 +1,48 @@
+Function faciliates
+
+--Code Reusability
+--parameters are the values that are being states
+  with random names in the function box
+  --func(int a ,int b)
+    --a,b are parameters
+
+--arguments are the values that are being passed
+  when function is being called
+  --fun(a,b)
+
+---
+
+If console.log (or any other console method)
+is written inside a function, it simply logs 
+to the console when that function is called.
+-----
+However, if people misunderstood it, 
+they might think that writing console.log inside the function 
+----
+means that the function returns the logged value, which is not true.
+
+
+--
+when passing parameters
+  --when we dont know 
+    how many are coming in
+    --
+    we'll use rest/spread operator
+    those values are being passed into an array
+    ---
+    Ex:
+    func(num1,num2,...num3){
+      return 
+    }
+
+    func(100,200,300,400,500);
+    ///-----
+    output:
+    [300,400,500]
+
+----we can pass 
+  objects directly definingn there itself
+
+
+
+    
