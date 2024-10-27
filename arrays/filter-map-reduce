@@ -1,0 +1,33 @@
+-------filter
+const nums=[1,2,3,4,5,6,7,8,9,10]
+const newNums = nums.filter( (num) => num>4 );
+
+------map
+applies operation on every element 
+const newNums = nums
+                  .map((num) => num+2)
+                  .map((num) => num+1)
+                  .filter()
+
+-----reduce
+[accumulator, currentValue]
+--acc stored the previous sum value
+--currval stores the current value
+
+const myNums = [1, 2, 3]
+const myTotal = myNums.reduce(
+  function (acc, currval) {
+   console.log(`acc: ${acc} and currval: ${currval}`); 
+   return acc + currval
+  }, 0)
+console.log(myTotal);
+
+use case:
+
+const priceToPay price, 0) = 
+shoppingCart.reduce((acc, item) => acc + item.
+
+
+
+
+
