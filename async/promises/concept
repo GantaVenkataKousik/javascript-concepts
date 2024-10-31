@@ -13,3 +13,21 @@ then((user) => {
 .catch(function(error){
     console.log(error);
 })
+
+
+in this
+when the response was well suited and
+responded
+then in that case
+we are getting 
+-----> resolve
+in opposite case
+-----> reject
+
+and this needs to be handled by
+try - catch
+
+as that was so necessary 
+to continue the regular flow of the 
+program
+
