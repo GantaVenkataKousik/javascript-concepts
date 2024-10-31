@@ -1,3 +1,15 @@
 It's an object denoting the failure or completion
 of an asynchronous operation
 
+
+promiseFour.
+then((user) => {
+    console.log(user);
+    return user.username
+})
+.then((username) => {
+    console.log(username);
+})
+.catch(function(error){
+    console.log(error);
+})
